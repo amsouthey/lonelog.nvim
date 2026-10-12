@@ -69,7 +69,7 @@ syn region lonelogNota matchgroup=lonelogNotaParen
 
 " === Multi-line tags (span lines, close with ] on its own line) ===
 syn region lonelogTagML
-  \ start='\v\[(N|L|PC|E|THREAD|CLOCK|TRACK|TIMER|INV|WEALTH|R|F|TAG|#N):'
+  \ start='\v\[(N|L|PC|E|THREAD|CLOCK|TRACK|TIMER|INV|WEALTH|R|F|TAG|#N):[^\]]*$'
   \ end='^\s*\]'
   \ contains=lonelogTagMLBracket,lonelogTagMLType,lonelogTagMLSep,lonelogTagMLContent
   \ keepend
